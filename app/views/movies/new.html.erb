@@ -1,4 +1,4 @@
-<h1>Editing <%= @movie.title %></h1>
+<h1>Create Movie</h1>
 
 <%= form_for(@movie) do |f| %>
   <p>
@@ -15,7 +15,7 @@
   </p>
   <p>
     <%= f.label :released_on %>
-    <%= f.date_select :released_on, start_year: 1960  %>
+    <%= f.date_select :released_on, start_year: 1960 %>
   </p>
   <p>
     <%= f.label :total_gross %>
