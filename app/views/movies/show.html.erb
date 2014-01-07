@@ -1,4 +1,5 @@
 <article>
+  <%= image_for(@movie) %>
   <header>
     <h1>
       <%= @movie.title %>
@@ -11,6 +12,12 @@
   <p><%= @movie.rating %></p>
   <h3>Released On</h3>
   <p><%= @movie.released_on.to_s(:release_date) %></p>
+  <h3>Cast</h3>
+  <p><%= @movie.cast %></p>
+  <h3>Director</h3>
+  <%= @movie.director %>
+  <h3>Duration</h3>
+  <%= @movie.duration %>
   <h3>Total Gross</h3>
   <p><%= format_total_gross(@movie) %></p>
 </article>
